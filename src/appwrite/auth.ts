@@ -1,4 +1,4 @@
-import { Client, Account } from "appwrite";
+import { Client, Account, Avatars } from "appwrite";
 
 export const client = new Client();
 
@@ -7,4 +7,5 @@ client
   .setProject(process.env.NEXT_PUBLIC_PROJECT_ID as string); // Replace with your project ID
 
 export const account = new Account(client);
+export const avatars = new Avatars(client);
 export { ID } from "appwrite";
